@@ -99,7 +99,7 @@ def jogo_em_pausa():
 
 
         # Esperar até que o botão de saída da pausa seja clicável
-        pause_button = WebDriverWait(driver, 5).until(
+        pause_button = WebDriverWait(driver, 2).until(
             EC.presence_of_element_located((By.XPATH, '//*[@id="root"]/div/div/div[2]/div[11]/div[1]/button'))
         )
         
